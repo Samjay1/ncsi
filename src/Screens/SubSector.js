@@ -25,14 +25,15 @@ const SubSector = () => {
     // let selected_company = 'ABSA BANK';//SECTOR FROM SESSION FROM PREVIOUS PAGE'ANSWER
     let id = data.id;
 
+     console.log('my sector',location.state.sector_id)
     if(id===25){
       let question = data.question
       let answers = data.answers.filter((value)=> {
-        if(value.sector_id === (question.sector_id=== undefined ?1:question.sector_id)){
-            // console.log('true',value.sector_id, question.sector_id)
+        if(value.sector_id === location.state.sector_id){
+            console.log('true',value.sector_id, question.sector_id)
             return true;
         }else{
-            // console.log('false',value.sector_id, question.sector_id)
+            console.log('false',value.sector_id, question.sector_id)
             return false
         }
         
