@@ -25,7 +25,7 @@ const SubSector = () => {
     // let selected_company = 'ABSA BANK';//SECTOR FROM SESSION FROM PREVIOUS PAGE'ANSWER
     let id = data.id;
 
-     console.log('my sector',location.state.sector_id)
+     console.log('my sector 454',subSector)
     if(id===25){
       let question = data.question
       let answers = data.answers.filter((value)=> {
@@ -53,7 +53,7 @@ const SubSector = () => {
     }
   });
 
-  console.log('setAns1 :>> ', {...location.state, subsector_id:subSector.name,subsector_name:subSector.value});   
+  console.log('skjsetAns1 :>> ', {...location.state, subsector_id:subSector.name,subsector_name:subSector.value, che:'kdjfkl', choice:subSector.choice||'null'});   
   
 
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ const SubSector = () => {
   const onTapped = ()=>{
     if(subSector.length !== 0 ? true: false){
       console.log(process.env.PUBLIC_URL)
-      navigate(process.env.PUBLIC_URL+`/question2`, {state:{...location.state, subsector_id:subSector.name,subsector_name:subSector.value}})
+      navigate(process.env.PUBLIC_URL+`/question2`, {state:{...location.state, subsector_id:subSector.name,subsector_name:subSector.value,che:'kdjfkl', choice:subSector.choice||'null'}})
     }else{
       setError1(true)
     }
@@ -77,7 +77,7 @@ const SubSector = () => {
         {question}
         
         
-        <Footer key={'footer'} title={'Next'} onTap={onTapped} button_state='true' load={'24%'} page={2}></Footer>
+        <Footer key={'footer'} title={'Next'} onTap={onTapped} button_state='true' load={'27%'} page={3}></Footer>
       </div>
      );
 }

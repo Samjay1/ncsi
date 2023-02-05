@@ -7,7 +7,7 @@ const Radio = ({onValueChange,errorState,question,questionName,selected_companie
         let value = answer.answer ||answer.value
            return (<div key={value} className="answer-item">
                     <label>
-                        <input name={questionName || sameName} key={answer.id} onChange={(e)=>{onValueChange({name: e.target.name, id:answer.id, value: e.target.value})} } type="radio" value={value} className="mr-2 "/>
+                        <input name={questionName || sameName} key={answer.id} onChange={(e)=>{onValueChange({name: e.target.name, id:answer.id, value: e.target.value, choice: answer.choice})} } type="radio" value={value} className="mr-2 "/>
                         <span className="ml-2">{value}</span>
                     </label>
              </div>)

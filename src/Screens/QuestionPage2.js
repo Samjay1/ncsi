@@ -24,6 +24,7 @@ function QuestionPage2 (){
    sector_name={location.state.sector_name} 
    subSector_id={location.state.subsector_id} 
    subSector_name={location.state.subsector_name} 
+   choice={location.state.choice} 
    sample={sample}></NavigationRoute>
 }
 
@@ -277,7 +278,7 @@ class  NavigationRoute extends Component {
   
 
   render(){
-    console.log(this.props)
+    console.log('CHOICEAs',this.props)
 
     let sector_name = this.props.sector_name||'My sector BANK';
     let sector_id = this.props.sector_id || 1;
@@ -308,7 +309,11 @@ class  NavigationRoute extends Component {
           
         }
         else if(id===3){
-          let new_answers = answers.filter((answerOne)=> answerOne.sector_id === sector_id)
+          let new_answers = answers.filter((answerOne)=> {
+           if(answerOne.sector_id === sector_id && answerOne.choice=== this.props.choice ){
+              return true;
+            }else return false;
+          })
           // console.log('new_answers :>> ', new_answers);
           let sector_title = 
           {'BANKING' : "BANKS",
