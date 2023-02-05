@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/survey/static/css/main.913d90e3.css",
+    "main.js": "/survey/static/js/main.767405fd.js",
+    "static/media/logo.png": "/survey/static/media/logo.df11d10e40af71df0ab8.png",
+    "index.html": "/survey/index.html",
+    "main.913d90e3.css.map": "/survey/static/css/main.913d90e3.css.map",
+    "main.767405fd.js.map": "/survey/static/js/main.767405fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.913d90e3.css",
+    "static/js/main.767405fd.js"
+  ]
+}
