@@ -498,7 +498,11 @@ class  NavigationRoute extends Component {
     {name: 'Transportation', value: 'This section surveys ride hailing transport services in Nigeria '},
     {name: 'Insurance', value: 'This section surveys insurance companies regulated by the National Insurance Commission'},
     {name: 'Oil Marketing Companies', value: 'This section surveys the Oil Marketing Companies Sector'},
-    {name: 'Oil Marketing', value: 'This section surveys the Oil Marketing Companies Sector'}
+    {name: 'Oil Marketing', value: 'This section surveys the Oil Marketing Companies Sector'},
+    {name: 'Power', value: 'This section surveys the Power Sector'},
+    {name: 'Government Agencies(Public Sector)', value: 'This section surveys the Government Agencies(Public Sector)'},
+    {name: 'Financial', value: 'This section surveys the Financial Sector'},
+    {name: 'Online Shopping', value: 'This section surveys the Online Shopping Sector'},
   ]
   
   
