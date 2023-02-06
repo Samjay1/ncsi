@@ -20,21 +20,21 @@ const ThankYou = () => {
             {/* <!-- SECTOR HEAD --> */}
             <div className="main-body-head animate__animated animate__bounceIn">
                 <div className="sector-body pl-4 bg-white pt-4 pb-2 text-center">
-                    <h4>NIGERIA CUSTOMER SERVICE INDEX SURVEY 2022</h4>
+                    <h4>NIGERIA CUSTOMER SERVICE INDEX SURVEY</h4>
                     <div className='mt-4 pt-4 border-top text-success'>
                     <span><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 icon-svg text-success" fill="none" viewBox="0 0 24 24" stroke="green" strokeWidth="2">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg></span>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg></span>
                         <h2 className='primary-text'>Survey Completed</h2>
-                        <p className='text-secondary text-left mr-3 '>Thank you for taking part in the Nigeria Customer Service Index Survey 2022. For more information please email <a href="mailto:info@Nigeriacsi.org">info@Nigeriacsi.org</a></p>
+                        <p className='text-secondary text-left mr-3 '>Thank you for taking part in the Nigeria Customer Service Index Survey. For more information please email <a href="mailto:info@Nigeriacsi.org">info@Nigeriacsi.org</a></p>
                     </div>
                 </div>
                 <div className="mt-3">
                 </div>
             </div>
-            <button  onClick={onClearing} className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
-                   Back to Homepage
-                </button>
+            <button  onClick={onClearing} className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2">
+                Back to Homepage
+            </button>
             {/* <!-- END SECTOR HEAD --> */}
         </div>  
 

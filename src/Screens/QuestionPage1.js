@@ -49,7 +49,7 @@ const QuestionPage1 = () => {
   const navigate = useNavigate();
   // error handling click event
   const onTapped = ()=>{
-    if(ans1.length !== 0 ? true: false){
+    if(ans1.id !== undefined){
       console.log(process.env.PUBLIC_URL)
       if(ans1.id === 6 || ans1.id === 7 || ans1.id === 8) {
         navigate(process.env.PUBLIC_URL+`/question2`, {state:{sector_id:ans1.id,sector_name: ans1.value}})

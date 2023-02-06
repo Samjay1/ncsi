@@ -24,8 +24,6 @@ const SubSector = () => {
   let question = data.map((data)=> { 
     // let selected_company = 'ABSA BANK';//SECTOR FROM SESSION FROM PREVIOUS PAGE'ANSWER
     let id = data.id;
-
-     console.log('my sector 454',subSector)
     if(id===25){
       let question = data.question
       let answers = data.answers.filter((value)=> {
@@ -53,13 +51,14 @@ const SubSector = () => {
     }
   });
 
-  console.log('skjsetAns1 :>> ', {...location.state, subsector_id:subSector.name,subsector_name:subSector.value, che:'kdjfkl', choice:subSector.choice||'null'});   
+  console.log('SUBSECTOR :>> ', {...location.state, subsector_id:subSector.name,subsector_name:subSector.value, che:'kdjfkl', choice:subSector.choice||'null'});   
   
 
   const navigate = useNavigate();
   // error handling click event
   const onTapped = ()=>{
-    if(subSector.length !== 0 ? true: false){
+    console.log('subSector :>> ', subSector, subSector.id);
+    if(subSector.id !== undefined){
       console.log(process.env.PUBLIC_URL)
       navigate(process.env.PUBLIC_URL+`/question2`, {state:{...location.state, subsector_id:subSector.name,subsector_name:subSector.value,che:'kdjfkl', choice:subSector.choice||'null'}})
     }else{

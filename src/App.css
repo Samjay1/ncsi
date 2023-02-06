@@ -84,6 +84,15 @@ input[type=checkbox] {
     
 }
 
+.defaultRounded{
+  border-radius: 10px;
+}
+
+.defaultBorder{
+  border:2px solid #007699;
+}
+
+
 /* INPUT DESIGNS */
 input[type=checkbox]:before {
   content: "";
